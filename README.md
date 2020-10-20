@@ -24,4 +24,4 @@
 8. 选中根目录, 勾选Automatic Upload, 上传文件到容器
 ![avatar](./src/3.png)
 
-9. 在容器窗口运行`hyperf-watch -c --dir /home`
+9. 在第5步容器窗口中运行`hyperf-watch -c --dir /home`
