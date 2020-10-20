@@ -1,5 +1,7 @@
 # hyperf-windows-dev
 因`Docker` 底层原因, `Windows` / `Mac` 下挂载磁盘启动`Hyperf` 非常慢, 这里提供一个思路: 不挂载磁盘, 容器内部署`SFTP` 配合ide同步代码
+
+(新版Docker 配合WSL2 已经解决文件共享问题, 推荐使用)
  
 1. 下载`Dockerfile`, 将`Dockerfile`里`你的公钥` 替换为你的`SSH` 公钥 (例:C:\Users\Administrator\.ssh\id_rsa.pub)
 
