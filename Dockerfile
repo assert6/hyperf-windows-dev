@@ -14,7 +14,6 @@ RUN apk add openssh-server \
     && ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
 
 RUN mkdir /root/.ssh \
-    && echo "你的公钥" > /root/.ssh/authorized_keys \
     && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config \
     && echo "PermitEmptyPasswords yes" >> /etc/ssh/sshd_config \
     && passwd -d root
