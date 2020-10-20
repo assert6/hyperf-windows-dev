@@ -24,4 +24,4 @@ WORKDIR /home
 EXPOSE 22
 EXPOSE 9501
 
-CMD ["sh", "-c", "/usr/sbin/sshd && hyperf-watch -c --dir /home"]
+CMD ["sh", "-c", "/usr/sbin/sshd && /bin/bash"]
