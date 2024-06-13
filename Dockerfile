@@ -18,9 +18,7 @@ RUN mkdir /root/.ssh \
     && echo "PermitEmptyPasswords yes" >> /etc/ssh/sshd_config \
     && passwd -d root
 
-# composer2
-RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-    
+# composer2    
 RUN composer self-update --2
 
 WORKDIR /home
